@@ -1,0 +1,36 @@
+body{
+    background-color: green;
+}
+
+.card{
+    font-family: 'Carter One', cursive;
+    display: inline-block;
+    padding-top: 135px;
+    margin: 0 auto;
+    height: 450px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+    position: relative;
+    font-size: 110px;
+}
+
+.card::before{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    font-size: 90px;
+  
+}
+
+.card::after{
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    font-size: 90px;
+}
+.spade:before, .spade:after{ content: "\2660";}
+.club:before, .club:after{ content: "\2663";}
+.heart:before, .heart:after{ content: "\2665"; color: red;}
+.diamond:before, .diamond:after{ content: "\2666"; color: red}
